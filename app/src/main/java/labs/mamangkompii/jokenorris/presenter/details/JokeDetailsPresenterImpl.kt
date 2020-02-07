@@ -24,6 +24,7 @@ class JokeDetailsPresenterImpl(
                     },
                     {
                         singleJokeShowcaseView.showErrorToast()
+                        singleJokeShowcaseView.toggleRefreshButton(true)
                     },
                     {
                         singleJokeShowcaseView.toggleRefreshButton(true)
@@ -45,6 +46,7 @@ class JokeDetailsPresenterImpl(
                     },
                     {
                         singleJokeShowcaseView.showErrorToast()
+                        singleJokeShowcaseView.toggleRefreshButton(true)
                     },
                     {
                         singleJokeShowcaseView.toggleRefreshButton(true)
