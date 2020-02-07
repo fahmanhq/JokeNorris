@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_home.*
 import labs.mamangkompii.jokenorris.R
@@ -34,7 +35,7 @@ class HomeActivity : AppCompatActivity(), JokesCategoriesView, CategoryClickList
 
     private fun setupCategoryList() {
         jokesCategoriesRecyclerAdapter = JokesCategoriesRecyclerAdapter(this)
-        categoryListRV.layoutManager = LinearLayoutManager(this)
+        categoryListRV.layoutManager = GridLayoutManager(this, 2)
         categoryListRV.adapter = jokesCategoriesRecyclerAdapter
     }
 
